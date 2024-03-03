@@ -156,3 +156,30 @@
     transition: 250ms;
   }
 }
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.search-box input {
+  padding: 6px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  max-width: 170px;
+}
+
+.search-box input::placeholder {
+  color: #fff;
+}
+
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+}

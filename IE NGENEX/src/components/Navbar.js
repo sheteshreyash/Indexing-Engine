@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import { ButtonSignup } from './SignUpButton';
 import { Link } from 'react-router-dom';
 import '../style/components/Navbar.css';
+import '../assets/images/search-w.png';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,7 +30,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
+            IE Ngenex
             <i className='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -47,7 +48,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Today's Deals
               </Link>
             </li>
             <li className='nav-item'>
@@ -60,6 +61,11 @@ function Navbar() {
               </Link>
             </li>
 
+            <li className='search-box'>
+              <input type="text" placeholder='Search' />
+              <img src="../assets/images/search-w.png" alt="" />
+            </li>
+
             <li>
               <Link
                 to='/sign-up'
@@ -70,7 +76,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Join Us</Button>}
+          {button && <ButtonSignup buttonStyle='btn--outline'>Join Us</ButtonSignup>}
         </div>
       </nav>
     </>

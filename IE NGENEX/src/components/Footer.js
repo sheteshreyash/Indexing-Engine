@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/components/Footer.css';
-import { Button } from './Button';
+import { ButtonSignup } from './SignUpButton';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -8,8 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
-        </p>
+          Embark on savings and style with our IE-Ngenex newsletter</p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
         </p>
@@ -21,7 +20,7 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <ButtonSignup buttonStyle='btn--outline'>Subscribe</ButtonSignup>
           </form>
         </div>
       </section>
@@ -64,11 +63,11 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
+              IE Ngenex
               <i className='fab fa-typo3' />
             </Link>
           </div>
-          <small className='website-rights'>TRVL © 2020</small>
+          <small className='website-rights'>IE Ngenex © 2024</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
