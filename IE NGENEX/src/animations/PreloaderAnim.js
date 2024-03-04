@@ -1,12 +1,12 @@
 import gsap from "gsap";
 
 // Declare a general timeline to use in all the animation functions.
-
 const tl = gsap.timeline();
 
 // Preloader Animation
 export const preLoaderAnim = () => {
-    tl.to("body", {
+    const preloadertl = gsap.timeline();
+    preloadertl.to("body", {
         duration: 0.1,
         css: { overflowY: "hidden" },
         ease: "power3.inOut",
@@ -102,8 +102,8 @@ export const preLoaderAnim = () => {
 };
 
 export const openMenu = () => {
-    const tl = gsap.timeline();
-    tl.to("body", {
+    const menuopen = gsap.timeline();
+    menuopen.to("body", {
         duration: 0.1,
         css: { overflowY: "hidden" },
         ease: "power3.out",
@@ -156,8 +156,8 @@ export const openMenu = () => {
 };
 
 export const closeMenu = () => {
-    const tl = gsap.timeline();
-    tl.to("body", {
+    const menuclose = gsap.timeline();
+    menuclose.to("body", {
         duration: 0.05,
         css: { overflowY: "scroll" },
         ease: "power3.inOut",

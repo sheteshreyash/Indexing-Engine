@@ -13,13 +13,13 @@ function Cards() {
               src='images/bestseller1.jpg'
               text='Unleash your individuality and make a statement with our bold and vibrant shoe selections.'
               label='Trendy Treads'
-              path='/services'
+              path='/deals'
             />
             <CardItem
               src='images/bestseller2.jpg'
               text='Elevate your everyday look with our trendsetting designs and premium quality materials.'
               label='Luxury'
-              path='/services'
+              path='/deals'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,19 +27,19 @@ function Cards() {
               src='images/bestseller3.jpg'
               text='Elevate your digital experience with our sleek and powerful laptops.'
               label='Digital Ocean'
-              path='/services'
+              path='/deals'
             />
             <CardItem
               src='images/bestseller4.jpg'
               text='Make a statement with every step with our smartwatches.'
               label='Style'
-              path='/products'
+              path='/deals'
             />
             <CardItem
               src='images/bestseller5.jpg'
               text="Elevate your wardrobe with timeless elegance and contemporary flair."
               label='Fashion'
-              path='/sign-up'
+              path='/deals'
             />
           </ul>
         </div>

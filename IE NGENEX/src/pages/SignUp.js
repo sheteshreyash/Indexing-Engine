@@ -12,7 +12,7 @@ function SignUp() {
           <Components.Title>Create Account</Components.Title>
           <Components.Input type='text' placeholder='Name' />
           <Components.Input type='email' placeholder='Email' />
-          <Components.Input type='password' placeholder='Password' />
+          <Components.Input type='password' placeholder='current-password' />
           <Components.Button>Sign Up</Components.Button>
         </Components.Form>
       </Components.SignUpContainer>
@@ -21,7 +21,7 @@ function SignUp() {
         <Components.Form>
           <Components.Title>Welcome Back</Components.Title>
           <Components.Input type='email' placeholder='Email' />
-          <Components.Input type='password' placeholder='Password' />
+          <Components.Input type='password' placeholder='current-password' />
           <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
           <Components.Button>Sign In</Components.Button>
         </Components.Form>
@@ -31,7 +31,7 @@ function SignUp() {
         <Components.Overlay signinIn={signIn}>
 
           <Components.LeftOverlayPanel signinIn={signIn}>
-            <Components.Title>Welcome Back!</Components.Title>
+            <Components.Title>Login</Components.Title>
             <Components.Paragraph>
               To keep connected with us please login with your personal info
             </Components.Paragraph>

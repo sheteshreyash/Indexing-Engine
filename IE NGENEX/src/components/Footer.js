@@ -64,7 +64,7 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               IE Ngenex
-              <i className='fab fa-typo3' />
+              <i className='fas-solid fas-fax' />
             </Link>
           </div>
           <small className='website-rights'>IE Ngenex © 2024</small>

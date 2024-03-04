@@ -31,7 +31,7 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             IE Ngenex
-            <i className='fab fa-typo3' />
+            <i className='fas-solid fas-fax' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -44,7 +44,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/deals'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -60,7 +60,6 @@ function Navbar() {
                 Products
               </Link>
             </li>
-
             <li className='search-box'>
               <input type="text" placeholder='Search' />
               <img src="../assets/images/search-w.png" alt="" />
