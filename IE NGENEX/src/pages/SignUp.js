@@ -1,29 +1,30 @@
 import React from 'react';
 import '../style/App.css';
 import * as Components from '../components/SinSupComp';
-
+import { Descope } from '@descope/react-sdk'
 
 function SignUp() {
+
   const [signIn, toggle] = React.useState(true);
   return (
     <Components.Container>
       <Components.SignUpContainer signinIn={signIn}>
         <Components.Form>
-          <Components.Title>Create Account</Components.Title>
-          <Components.Input type='text' placeholder='Name' />
-          <Components.Input type='email' placeholder='Email' />
-          <Components.Input type='password' placeholder='current-password' />
-          <Components.Button>Sign Up</Components.Button>
+          <Descope
+            flowId="sign-up"
+            onSuccess={(e) => console.log(e.detail.user)}
+            onError={(e) => console.log('Could not log in!')}
+          />
         </Components.Form>
       </Components.SignUpContainer>
 
       <Components.SignInContainer signinIn={signIn}>
         <Components.Form>
-          <Components.Title>Welcome Back</Components.Title>
-          <Components.Input type='email' placeholder='Email' />
-          <Components.Input type='password' placeholder='current-password' />
-          <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
-          <Components.Button>Sign In</Components.Button>
+          <Descope
+            flowId="sign-up-or-in"
+            onSuccess={(e) => console.log(e.detail.user)}
+            onError={(e) => console.log('Could not log in!')}
+          />
         </Components.Form>
       </Components.SignInContainer>
 

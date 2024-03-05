@@ -1,0 +1,159 @@
+.popular-product-container {
+  padding: 0px 16rem;
+}
+.title {
+  font-family: "Barlow";
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 46px;
+  text-align: center;
+  color: #6412e9;
+  margin-top: 22px;
+}
+.sub-title {
+  font-family: "Sedgwick Ave";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  color: #121217;
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+.product-details {
+  padding: 12px;
+}
+
+.title-product {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 26px;
+  color: #170a2c;
+  text-align: center;
+}
+.price-product {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 26px;
+  color: #121217;
+}
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -5px;
+}
+.add-btn {
+  border-color: #6412e9;
+  padding: 0px 18px;
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 12px;
+  color: #6412e9;
+  height: 24px;
+}
+.add-btn:hover {
+  border-color: #6412e9 !important;
+}
+
+.view-wrap {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.view-btn {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  width: 15%;
+  height: 40px;
+  color: #ffffff;
+  background: #6412e9;
+  border-radius: 5px;
+}
+.prev-btn {
+  position: absolute;
+  top: 46rem;
+  left: 14rem;
+}
+
+.view-more:hover {
+  color: #ffffff;
+}
+
+.slick-prev {
+  left: 207px;
+  background: none;
+}
+.slick-next {
+  right: 215px;
+  background: none;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: gray !important;
+  font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .main-header {
+    padding: 0px 13px;
+    /* margin-top: 70px; */
+  }
+  .title {
+    font-size: 30px;
+  }
+  .sub-title {
+    font-size: 18px;
+  }
+
+  .product-detail {
+    flex-direction: column;
+  }
+  .product-title {
+    text-align: center;
+  }
+  .popular-product-container {
+    padding: 0 20px;
+  }
+  .view-wrap {
+    margin-top: 8px;
+  }
+  .view-btn {
+    width: 40%;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 950px) {
+  .main-header {
+    margin-top: 70px;
+  }
+  .popular-product-container {
+    padding: 2px 5rem;
+  }
+  .view-wrap {
+    margin-top: 11px;
+  }
+  .slick-next {
+    right: 44px;
+  }
+  .slick-prev {
+    left: 31px;
+  }
+}

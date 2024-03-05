@@ -1,0 +1,193 @@
+.main-container-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 12rem;
+  background: #efebfb;
+  gap: 11rem;
+  padding-bottom: 8.4rem;
+}
+.first-div {
+  flex: 1;
+  width: 44%;
+}
+.first-text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+  color: #6412e9;
+}
+.sec-text {
+  font-family: "Sedgwick Ave";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #121217;
+}
+.login-container {
+  background: #ffffff;
+  backdrop-filter: blur(4.5px);
+  border-radius: 15px;
+  width: 42%;
+  min-width: 500px;
+}
+.login-text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #6412e9;
+}
+.form-login {
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+}
+.input-email {
+  background: #efebfb;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin-bottom: 19px;
+  height: 42px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  color: #716889;
+}
+.ant-divider-with-text::before {
+  border-block-start: 2px solid transparent !important;
+  border-block-start-color: #716889 !important;
+}
+.ant-divider-with-text::after {
+  border-block-start: 2px solid transparent !important;
+  border-block-start-color: #716889 !important;
+}
+.email-btn,
+.google-btn {
+  border-radius: 5px;
+  height: 42px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.email-btn {
+  background: #38ffb7;
+  color: #6412e9;
+}
+.email-btn:hover {
+  border: none;
+}
+.google-btn {
+  color: #716889;
+  margin-bottom: 12px;
+  border: none;
+  background: #efebfb;
+}
+.acct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Barlow";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 40px;
+  color: #716889;
+  cursor: pointer;
+}
+.acct-link {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  color: #716889;
+}
+.sign-up {
+  font-weight: 700;
+}
+.btn-sign {
+  color: #716889 !important;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  .main-container-login {
+    flex-direction: column;
+    padding: 9px;
+    padding-bottom: 42px;
+    padding-top: 36px;
+    gap: 1rem;
+  }
+  .first-div {
+    text-align: center;
+    padding: 0px 15px;
+    width: 100%;
+  }
+  .login-container {
+    width: 93%;
+    min-width:500px;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 1000px) {
+  .main-container-login {
+    padding: 4rem 3rem;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .main-container-login {
+    padding: 4rem 4rem;
+    gap: 4rem;
+  }
+  .login-container {
+    width: 44%;
+    min-width:500px;
+  }
+  .first-text {
+    font-size: 34px;
+  }
+  .sec-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .main-container-login {
+    padding: 4rem 9rem;
+    background: #efebfb;
+    gap: 5rem;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1500px) {
+  .main-container-login {
+    padding: 4rem 14rem;
+    gap: 9rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1650px) {
+  .login-container {
+    width: 33%;
+    min-width:500px;
+  }
+}
+/* @media only screen and (max-width: 1600px) {
+  .main-container-login {
+    gap: 11rem;
+  }
+} */

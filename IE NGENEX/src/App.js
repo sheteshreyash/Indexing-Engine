@@ -11,6 +11,7 @@ import './style/components/Preloader.css'
 import Privacy from './pages/Privacy';
 import Cook from './components/CookieConsent';
 
+
 function App() {
   return (
     <>
@@ -25,7 +26,7 @@ function App() {
           <Route path='/privacy' component={Privacy} />
         </Switch>
       </Router>
-      <Cook/>
+      <Cook />
     </>
   );
 }
