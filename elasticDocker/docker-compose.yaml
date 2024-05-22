@@ -1,0 +1,61 @@
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.4
+    container_name: es01
+    environment:
+      - ELASTIC_PASSWORD=abc123
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata01:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - elastic
+
+  kib01:
+    image: docker.elastic.co/kibana/kibana:8.13.4
+    container_name: kib01
+    ports:
+      - 5601:5601
+    environment:
+      - ENTERPRISESEARCH_HOST=http://enterprise-search:3002
+    networks:
+      - elastic
+    depends_on:
+      - es01
+
+  # enterprise_search:
+  #   image: docker.elastic.co/enterprise-search/enterprise-search:8.13.4
+  #   container_name: enterprise_search
+  #   environment:
+  #     - elasticsearch.host=http://es01:9200
+  #     - elasticsearch.username=elastic
+  #     - elasticsearch.password=abc123
+  #     - ent_search.auth.source=standard
+  #     - secret_management.encryption_keys=["asdfasfsdfgsdg34=="]
+  #     - allow_es_settings_modification=true
+  #     - elasticsearch.ssl.enabled=true
+  #     - elasticsearch.ssl.certificate_authority=/usr/share/enterprise-search/es-config/certs/http_ca.crt
+  #     - kibana.external_url=http://kibana:5601
+  #   ports:
+  #     - 3002:3002
+  #   networks:
+  #     - elastic
+  #   depends_on:
+  #     - es01
+  #   volumes:
+  #     - es-config:/usr/share/enterprise-search/es-config:ro
+
+volumes:
+  esdata01:
+    driver: local
+  # es-config:
+  #   driver: local
+
+networks:
+  elastic:
+    driver: bridge
