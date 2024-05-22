@@ -28,6 +28,6 @@ export const ButtonSignup = ({
       >
         {children}
       </button>
-    </Link>
+      </Link>
   );
 };

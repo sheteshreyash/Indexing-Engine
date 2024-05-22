@@ -8,7 +8,7 @@ import SignUp from './pages/SignUp';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PreLoader from './components/Preloader';
 import './style/components/Preloader.css'
-import { CookieConsent } from 'react-cookie-consent';
+// import { CookieConsent } from 'react-cookie-consent';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         </Switch>
       </Router>
 
-
+{/*
       <CookieConsent
         debug={true}
         location='bottom'
@@ -33,7 +33,8 @@ function App() {
         buttonText = 'Got it!'
       >
         This Site uses Cookies. Visit our <a href="/privacy">privacy policy</a> for more.
-      </CookieConsent>
+      </CookieConsent> */}
+
     </>
   );
 }
